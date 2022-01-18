@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <head>
-    <title>Simple Calculator - Site Static</title>
+    <title>Simple Calculator - Site Static</title> //titlul site-ului
 </head>
 <body>
-    <form action="" name="calculator">
+    <form action="" name="calculator"> //numele actiunii
         <table>
             <tr>
-                <td colspan="4"><input type="text" id="display" disabled></td>
+                <td colspan="4"><input type="text" id="display" disabled></td> //numarul de coloane
             </tr>
-            <tr>
-                <td><input type="button" value="1" onclick="calculator.display.value += '1'"></td>
-                <td><input type="button" value="2" onclick="calculator.display.value += '2'"></td>
+            <tr> //rand nou
+                <td><input type="button" value="1" onclick="calculator.display.value += '1'"></td> //coloana 1, randul 1, adauga in display cifra 1.
+                <td><input type="button" value="2" onclick="calculator.display.value += '2'"></td> //etc..
                 <td><input type="button" value="3" onclick="calculator.display.value += '3'"></td>
                 <td><input type="button" value="+" onclick="calculator.display.value += '+'"></td>
             </tr>
@@ -29,7 +29,7 @@
             <tr>
                 <td><input type="button" value="c" onclick="calculator.display.value = ''"></td>
                 <td><input type="button" value="0" onclick="calculator.display.value += '0'"></td>
-                <td><input type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)"></td>
+                <td><input type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)"></td> //efectueaza operatia introdusa
                 <td><input type="button" value="/" onclick="calculator.display.value += '/'"></td>
             </tr>
         </table>
